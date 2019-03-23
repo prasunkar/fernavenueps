@@ -1,0 +1,53 @@
+$mdc-theme-primary: #208C38;
+
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/select/mdc-select";
+@import "@material/card/mdc-card";
+
+html {
+	background-color: #f7f7f7;
+    font-family: Roboto;
+}
+
+.text-field-wrapper {
+	display: block;
+ 	margin: 16px auto;
+}
+
+.text-field-wrapper .mdc-text-field, .text-field-wrapper .mdc-select {
+	margin: auto 6px;
+}
+
+.app-bar, .mdc-drawer {
+	top: 0;
+	left: 0;
+}
+
+p {
+	text-align: justify;
+}
+
+h1, h2, .mdc-card__media-content p {
+	text-align: center;
+}
+
+.mdc-card {
+  height: 256px;
+  width: 384px;
+  margin: 24px;
+}
+
+.card-container {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+    justify-content: space-between;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
